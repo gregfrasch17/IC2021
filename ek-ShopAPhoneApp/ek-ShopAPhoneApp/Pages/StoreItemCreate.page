@@ -1,0 +1,54 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"OnPress": "/ShopA/Actions/CreateStoreItem.action",
+				"Position": "left",
+				"SystemItem": "Save",
+				"Text": "Save",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Store Item",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "Store ID",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Value": "#Control:StoreID/#Value",
+							"_Name": "StoreID",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Product ID",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Value": "#Control:ProductID/#Value",
+							"_Name": "ProductID",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Shelf Quantity",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Value": "#Control:ShelfQty/#Value",
+							"_Name": "ShelfQty",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Visible": true
+				}
+			],
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Name": "StoreItemDetail",
+	"_Type": "Page"
+}

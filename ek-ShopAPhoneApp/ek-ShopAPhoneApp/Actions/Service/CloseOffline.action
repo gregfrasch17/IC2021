@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.OfflineOData.Close",
+	"Service": "/ShopA/Services/ShopA.service",
+	"Force": true,
+	"ActionResult": {
+		"_Name": "close"
+	},
+	"OnSuccess": "/ShopA/Actions/Service/CloseOfflineSuccessMessage.action",
+	"OnFailure": "/ShopA/Actions/Service/CloseOfflineFailureMessage.action"
+}

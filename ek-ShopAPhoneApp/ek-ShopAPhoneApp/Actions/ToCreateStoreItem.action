@@ -1,0 +1,5 @@
+{
+	"NavigationType": "Cross",
+	"PageToOpen": "/ShopA/Pages/StoreItemCreate.page",
+	"_Type": "Action.Type.Navigation"
+}

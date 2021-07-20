@@ -1,0 +1,12 @@
+{
+	"Properties": {
+		"PRODUCTID": "#Control:ProductID/#Value",
+		"SHELFQTY": "#Control:ShelfQty/#Value",
+		"STOREID": "#Control:StoreID/#Value"
+	},
+	"Target": {
+		"EntitySet": "StoreItem",
+		"Service": "/ShopA/Services/ShopA.service"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

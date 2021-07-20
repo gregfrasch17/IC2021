@@ -1,0 +1,26 @@
+{
+	"Service": "/ShopA/Services/ShopA.service",
+	"DefiningRequests": [
+	{
+		"Name": "Product",
+		"Query": "Product"
+	},
+	{
+		"Name": "ShoppingItem",
+		"Query": "ShoppingItem"
+	},
+	{
+		"Name": "Store",
+		"Query": "Store"
+	},
+	{
+		"Name": "StoreItem",
+		"Query": "StoreItem"
+	}
+],
+	"_Type": "Action.Type.OfflineOData.Download",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnFailure": "/ShopA/Actions/Service/SyncFailureMessage.action"
+}

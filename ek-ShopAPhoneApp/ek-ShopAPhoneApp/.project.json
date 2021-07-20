@@ -1,0 +1,43 @@
+{
+	"Credential": "cf",
+	"CF": {
+		"Target": "https://api.cf.eu10.hana.ondemand.com",
+		"Organization": "dd7821ea-da75-46f1-82c1-ab3834626d0e",
+		"Space": "3005202a-d221-4cdd-8dd5-0cabe3514be8",
+		"Deploy": {
+			"Description": "",
+			"WebClient": {
+				"AutoUrl": true,
+				"Version": "5.0.0",
+				"StaticUrl": "",
+				"Dev": false,
+				"URL": "https://mdk-webclient-runtime.cfapps.eu10.hana.ondemand.com/runtime-5.0.0/"
+			},
+			"Destination": [
+				{
+					"CF": "ShopA",
+					"MDK": "ShopA",
+					"URL": ""
+				}
+			],
+			"Name": "ns.ShopA",
+			"Version": "1.0.0",
+			"SourceMap": false,
+			"StandaloneRouter": true,
+			"URL": "https://ic-cla-cf-team-2104-nsshopa-approuter.cfapps.eu10.hana.ondemand.com/nsShopA/index.html"
+		}
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.eu10.hana.ondemand.com/cockpit/v1/org/dd7821ea-da75-46f1-82c1-ab3834626d0e/space/3005202a-d221-4cdd-8dd5-0cabe3514be8",
+		"AppId": "com.sap.mdk.shopa",
+		"Destination": [
+			"ShopA"
+		]
+	},
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": "sapmobilesvcs://?AppId=com.sap.mdk.shopa&ClientId=a2646fd2-ac2b-4435-b31c-77a4f2ebedea&ServerUrl=https://ic-cla-team-2104-com-sap-mdk-shopa.cfapps.eu10.hana.ondemand.com&SapCloudPlatformEndpoint=https://ic-cla-team-2104-com-sap-mdk-shopa.cfapps.eu10.hana.ondemand.com&AuthorizationEndpointUrl=https://ic-cla-team-2104-com-sap-mdk-shopa.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://ic-cla-team-2104-com-sap-mdk-shopa.cfapps.eu10.hana.ondemand.com&TokenUrl=https://ic-cla-team-2104-com-sap-mdk-shopa.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/token"
+	}
+}

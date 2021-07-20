@@ -1,0 +1,9 @@
+{
+    "DestinationName": "ShopA",
+    "OfflineEnabled": true,
+    "LanguageURLParam": "sap-language",
+    "OnlineOptions": {},
+    "PathSuffix": "",
+    "SourceType": "Mobile",
+    "ServiceUrl":""
+}

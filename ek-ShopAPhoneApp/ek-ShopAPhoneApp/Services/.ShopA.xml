@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:DataServices>
+        <Schema Namespace="CatalogService" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <EntityContainer Name="EntityContainer">
+                <EntitySet Name="Product" EntityType="CatalogService.Product"/>
+                <EntitySet Name="ShoppingItem" EntityType="CatalogService.ShoppingItem"/>
+                <EntitySet Name="Store" EntityType="CatalogService.Store"/>
+                <EntitySet Name="StoreItem" EntityType="CatalogService.StoreItem"/>
+            </EntityContainer>
+            <EntityType Name="Product">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" Nullable="false"/>
+                <Property Name="NAME" Type="Edm.String"/>
+                <Property Name="BRANDID" Type="Edm.String"/>
+            </EntityType>
+            <EntityType Name="ShoppingItem">
+                <Key>
+                    <PropertyRef Name="STOREID"/>
+                    <PropertyRef Name="PRODUCTID"/>
+                </Key>
+                <Property Name="STOREID" Type="Edm.String" Nullable="false"/>
+                <Property Name="PRODUCTID" Type="Edm.String" Nullable="false"/>
+                <Property Name="QUANTITY" Type="Edm.Double"/>
+                <Property Name="PRICE" Type="Edm.Double"/>
+                <Property Name="TIME" Type="Edm.DateTimeOffset"/>
+            </EntityType>
+            <EntityType Name="Store">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" Nullable="false"/>
+                <Property Name="NAME" Type="Edm.String"/>
+                <Property Name="GEO" Type="Edm.String"/>
+            </EntityType>
+            <EntityType Name="StoreItem">
+                <Key>
+                    <PropertyRef Name="STOREID"/>
+                    <PropertyRef Name="PRODUCTID"/>
+                </Key>
+                <Property Name="STOREID" Type="Edm.String" Nullable="false"/>
+                <Property Name="PRODUCTID" Type="Edm.String" Nullable="false"/>
+                <Property Name="SHELFQTY" Type="Edm.Double"/>
+            </EntityType>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

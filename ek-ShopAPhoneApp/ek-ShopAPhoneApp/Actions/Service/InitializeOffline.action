@@ -1,0 +1,29 @@
+{
+	"Service": "/ShopA/Services/ShopA.service",
+	"DefiningRequests": [
+	{
+		"Name": "Product",
+		"Query": "Product"
+	},
+	{
+		"Name": "ShoppingItem",
+		"Query": "ShoppingItem"
+	},
+	{
+		"Name": "Store",
+		"Query": "Store"
+	},
+	{
+		"Name": "StoreItem",
+		"Query": "StoreItem"
+	}
+],
+	"_Type": "Action.Type.ODataService.Initialize",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Downloading...",
+	"ActionResult": {
+		"_Name": "init"
+	},
+	"OnSuccess": "/ShopA/Actions/Service/InitializeOfflineSuccessMessage.action",
+	"OnFailure": "/ShopA/Actions/Service/InitializeOfflineFailureMessage.action"
+}

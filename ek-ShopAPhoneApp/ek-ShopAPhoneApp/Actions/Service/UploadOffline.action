@@ -1,0 +1,9 @@
+{
+	"Service": "/ShopA/Services/ShopA.service",
+	"_Type": "Action.Type.OfflineOData.Upload",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnSuccess": "/ShopA/Actions/Service/DownloadStartedMessage.action",
+	"OnFailure": "/ShopA/Actions/Service/SyncFailureMessage.action"
+}
